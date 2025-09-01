@@ -3,21 +3,21 @@ const app = express();
 const PORT = 8081
 const fs = require("fs")
 
-app.get('/usuarios/', (req, res) => {
+app.get('/eventos/', (req, res) => {
     try {
-        const data = fs.readFileSync('./users.json', 'utf-8')
-        let usuarios = JSON.parse(data)
+        const data = fs.readFileSync('./eventos.json', 'utf-8')
+        let eventos = JSON.parse(data)
 
-        
-        const {nomeUsuario} = req.query;
-        if (nomeUsuario){
-            usuarios = usuarios.filter(
-                usuario => usuario.nome.toLowerCase() 
-                .includes(nomeUsuario.toLowerCase())
+
+        const { dataEvento } = req.query;
+        if (dataEvento) {
+            eventos = eventos.filter(
+                evento => evento.data >= parseFloat(dataEvento)
+
             )
         }
-        
-        res.status(200).json(usuarios)
+
+        res.status(200).json(eventos)
     } catch (error) {
         console.error("Algum erro no servidor! Erro: ", error)
     }
