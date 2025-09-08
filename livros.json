@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "livro" : "A Biblioteca da Meia Noite",
+        "autor" : "Matt Haig",    
+        "ano" : "2020-08-13"
+    },
+    {
+        "id" : 2,
+        "titulo" : "Tartarugas Ninja",
+        "autor" : "Kevin Eastman",    
+        "ano" : "1984-05-13" 
+    },
+    {
+        "id" : 3,
+        "livro" : "Cartas de um diabo a seu aprendiz",
+        "autor" : "CS Lewis",    
+        "ano" : "1942-02-17" 
+    },
+    {
+        "id" : 4,
+        "livro" : "A cabeça do santo",
+        "autor" : "Socorro Acioli",    
+        "ano" : "2014-02-7" 
+    },
+    {
+        "id" : 5,
+        "livro" : "Isso e aquilo (This & That)",
+        "autor" : "Bobbie Goods",    
+        "ano" : "2025-04-015" 
+    }
+]
