@@ -12,7 +12,7 @@ app.get('/eventos/', (req, res) => {
         const { dataEvento } = req.query;
         if (dataEvento) {
             eventos = eventos.filter(
-                evento => evento.data >= parseFloat(dataEvento)
+                evento => evento.data == dataEvento
 
             )
         }
